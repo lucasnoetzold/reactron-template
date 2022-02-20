@@ -1,8 +1,4 @@
-import React from 'react';
 import ReactDOM from 'react-dom'
-import fs from 'fs'
+import App from './App'
 
-ReactDOM.render(
-  (<p>{fs.readFileSync('README.md', 'utf-8')}</p>),
-  document.getElementById('root')
-)
+ReactDOM.render((<App />), document.getElementById('root'))

@@ -18,11 +18,10 @@ app.on('ready', function () {
     }
   });
 
-  if (DEV_MODE) {
-    mainWindow.loadURL("http://localhost:3000")
-  } else {
+  if (DEV_MODE)
+    mainWindow.loadURL("http://localhost:8080")
+  else
     mainWindow.loadFile("index.html")
-  }
 
   if (DEBUG)
     mainWindow.webContents.openDevTools({ mode: 'detach' })
