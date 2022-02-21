@@ -9,7 +9,6 @@ app.on('window-all-closed', app.quit)
 app.on('ready', function () {
 
   const mainWindow = new BrowserWindow({
-    icon: "web/favicon.png",
     webPreferences: {
       devTools: DEBUG,
       contextIsolation: false,
@@ -25,4 +24,5 @@ app.on('ready', function () {
 
   if (DEBUG)
     mainWindow.webContents.openDevTools({ mode: 'detach' })
+
 })
