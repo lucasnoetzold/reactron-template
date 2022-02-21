@@ -1,4 +1,4 @@
-Workin template for using [ReactJS](https://reactjs.org/) in an [Electron](https://electronjs.org/) app. Feel free to use!
+Working template for using [ReactJS](https://reactjs.org/) in an [Electron](https://electronjs.org/) app. Feel free to use!
 
 To start in development mode:
 
