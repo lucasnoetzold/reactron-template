@@ -21,7 +21,11 @@ const config = {
                 test: /\.[tj]sx$/,
                 exclude: /(node_modules)/,
                 loader: "babel-loader",
-                options: { presets: [["@babel/preset-react", { "runtime": "automatic" }]] }
+                options: { presets: [
+                    "@babel/preset-env",
+                    ["@babel/preset-react", { "runtime": "automatic" }],
+                    "@babel/preset-typescript",
+                ] }
             }
         ],
     },
